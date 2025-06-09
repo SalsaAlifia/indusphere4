@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111827;
+  color: white;
+}
+
+.map-section {
+  background: linear-gradient(to right, #1f2937, #1e3a5f);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.map-heading h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.white {
+  color: white;
+}
+
+.orange {
+  color: #ff6600;
+}
+
+.subheading {
+  font-size: 20px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.map-container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: #1a2536;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.coordinate-box {
+  background-color: #374151;
+  color: #ccc;
+  font-size: 16px;
+  text-align: right;
+  padding: 12px 20px;
+  font-family: monospace;
+}
+
+.koordinat-lat, .koordinat-lng {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.map-placeholder {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5f3ff;
+  color: #444;
+  font-size: 16px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .map-heading h1 {
+    font-size: 36px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+  .map-placeholder {
+    height: 320px;
+  }
+}
+.benefit-section {
+  background-color: #111827;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.benefit-container {
+  background: linear-gradient(to right, #2d3748, #2563eb);
+  border-radius: 10px;
+  padding: 40px 30px;
+  max-width: 1200px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.benefit-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.benefit-items {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #4b2e2e25;
+  color: #ff6600;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.benefit-item p {
+  font-size: 14px;
+  color: #e2e8f0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .benefit-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Layer Control */
+.layer-control {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 900;
+}
+.layer-control label {
+  display: block;
+  margin: 5px 0;
+}
+/* Map Legend */
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 800;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+.info.legend {
+  background: white;
+  padding: 8px;
+  line-height: 1.4em;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  font-size: 12px;
+  text-align : left;
+}
+.info.legend i {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+  margin-right: 6px;
+  opacity: 0.7;
+}
+.informasi {
+  background-color: #0e1a2b;
+  color: white;
+  padding: 60px 40px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background: #1a2d4a;
+  border-radius: 12px;
+  padding: 25px 30px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  text-align: left; /* ⬅️ Ini penting */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 165, 0, 0.4);
+}
+
+.info-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ffa500;
+}
+
+.info-box h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.info-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d1d1d1;
+  margin: 5px 0;
+}
